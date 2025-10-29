@@ -1,0 +1,5 @@
+Line 1: Hello Python!
+Line 2: File handling demo
+Line 3: Appending new text
+Line 4: Written using writelines()
+Line 5: Another line

@@ -55,7 +55,9 @@ dog1.info()
 cat1.info()
 
 Animal.describe_kingdom()
+dog1.describe_kingdom()
 Animal.breathe()
+dog1.breathe()
 
 print("\n--- Polymorphism Demo ---")
 for animal in (dog1, cat1):

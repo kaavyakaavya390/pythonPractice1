@@ -8,20 +8,20 @@ def my_decarater(func):
         return value
     return wrapper
 @my_decarater
-def func(*name):
+def func(name):
     return f"Hiiii {name}"
-print(func("Kaviya","Anitha","Pallavi"))
+print(func("Pallavi"))
 
 #---------------------------------
 class mystatic:
     def __init__(self,func):
         self.__func__=func
     
-    def __get__(self,obj,cls=None):
+    def __get__(self,obj=None,cls=None):
         print("decorater")
+        print(cls)
         return self.__func__
 class myclass:
-    var=45
     def __init__(self,val):
         self.val=val
     @mystatic
